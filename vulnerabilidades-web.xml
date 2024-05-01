@@ -1,0 +1,1190 @@
+<?xml version='1.0'?>
+<vulnerabilidades>
+    
+  <vuln> 
+   	<codVul>CS-01</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Parametros en URL</nombre>  
+    <criterio-aceptacion>La aplicación nunca revela tokens de sesión en los parámetros URL.</criterio-aceptacion>      
+    <score>0</score>  
+    <CWE>CWE-598</CWE>
+    <PCI>PCI:6.5.10</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Los parametros sensibles pueden ser cacheados en proxy reversos u otro tipo de dispositivos</impacto_tecnico>
+    <impacto_negocio> Acceso no autorizado</impacto_negocio>    
+    <PruebaConcepto> Se realizo el crawling del sitio web y se reviso las peticiones usadas. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>La aplicación revela tokens de sesión en los parámetros que se envian en peticiones GET.</descripcion>    
+    <recomendacion> Usar peticiones POST para el envio de tokens. </recomendacion> 
+    <recomendacionMatriz> Usar peticiones POST para el envio de tokens. </recomendacionMatriz> 
+    <conclusion>Se identificó el envio de parametros sensibles en peticiones GET</conclusion>        
+	  <referenciaweb> https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-02</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Generación</nombre>  
+    <criterio-aceptacion>La aplicación genera un nuevo token de sesión después de la autenticación del usuario.</criterio-aceptacion>      
+    <score>0</score>  
+    <CWE>CWE-384</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-03</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Entropía</nombre>  
+    <criterio-aceptacion>Los tokens de sesión poseen al menos 64 bits de entropía.</criterio-aceptacion>      
+    <score>0</score>  
+    <CWE>CWE-331</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-04</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Almacenamiento</nombre>  
+    <criterio-aceptacion>La aplicación solo almacena tokens de sesión mediante métodos seguros, como cookies debidamente protegidas o HTML 5 session storage. Se debe evitar el uso del local Storage.</criterio-aceptacion>      
+    <score></score>  
+    <CWE>CWE-539</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> </impacto_tecnico>
+    <impacto_negocio> </impacto_negocio>    
+    <PruebaConcepto> </PruebaConcepto>    
+    <descripcion> </descripcion>    
+    <recomendacion> </recomendacion> 
+    <recomendacionMatriz>  </recomendacionMatriz> 
+    <conclusion></conclusion>
+	  <referenciaweb> </referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-05</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Cierre de sesión</nombre>  
+    <criterio-aceptacion>Verifique que el cierre de sesión invalide el token de sesión.</criterio-aceptacion>      
+    <score>0</score>  
+    <CWE>CWE-613</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-06</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Tiempo de expiración</nombre>  
+    <criterio-aceptacion>El tiempo máximo de vida de una sesión deberá ser de: SALTOLINEA- N1: 30 días.SALTOLINEA- N2: 2 horas o 30 minutos de inactividad.SALTOLINEA- N3: 1 hora o 15 minutos de inactividad con un 2do Factor de autenticación.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-613</CWE>
+    <PCI>PCI:6.5.10</PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-07</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Cierre de sesiones activas</nombre>  
+    <criterio-aceptacion>La aplicación da la opción de terminar todas las demás sesiones activas después de un cambio de contraseña exitoso.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-613</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-08</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>Cookies</nombre>
+    <criterio-aceptacion>Si la aplicación usa tokens de sesión basados en cookies debe tener establecido los  atributos:SALTOLINEA-Secure.SALTOLINEA-HttpOnly.SALTOLINEA-SameSite = Strict</criterio-aceptacion>    
+    <score>0</score>  
+    <CWE>CWE-614SALTOLINEACWE-1004SALTOLINEACWE-16</CWE>
+    <PCI>PCI:6.5.10</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> La cookie es accesible mediante javascript|La cookie es accesible desde otros subdominios|La cookie puede ser enviada por canales inseguros</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>    
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor: SALTOLINEA IMAGEN SALTOLINEASe identifico que las siguientes cookies no tienen el atributo HttpOnly"</PruebaConcepto>    
+    <descripcion>Las cookies utilizadas no tienen establecidos todos los atributos seguros</descripcion>    
+    <recomendacion>Las cookies deben tener establecido los  atributos:SALTOLINEA-Secure.SALTOLINEA-HttpOnly.SALTOLINEA-SameSite = Strict</recomendacion> 
+    <recomendacionMatriz> Establecer atributos seguros de los cookies </recomendacionMatriz> 
+    <conclusion>Faltan atributos seguros a las cookies de la aplicación </conclusion>
+	  <referenciaweb> https://medium.com/swlh/secure-httponly-samesite-http-cookies-attributes-and-set-cookie-explained-fc3c753dfeb6</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-09</codVul> 
+    <grupo>Sesiones</grupo>
+    <nombre>CSRF</nombre>
+    <criterio-aceptacion>Si la aplicación usa cookies debe aplicar un mecanismo anti-CSRF de los siguientes:SALTOLINEA-Tokens anti-CSRF.SALTOLINEA-Comprobación de la cabecera de la solicitud de origen (CORS).SALTOLINEA-Doble cookie.</criterio-aceptacion>    
+    <score>0</score>  
+    <CWE>CWE-352</CWE>
+    <PCI>PCI:6.5.9</PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+
+<vuln> 
+   	<codVul>CS-10</codVul>
+    <grupo>Autenticación</grupo>
+    <nombre>Proteger la adivinación de usuarios</nombre>
+    <criterio-aceptacion>El sistema proporciona errores genéricos al usuario durante una  autenticación fallida. Por ejemplo: "El usuario o la contraseña es incorrecta". El mensaje de error no debe poder ser utilizado para identificar cuando se envía un usuario válido.</criterio-aceptacion>    
+    <score>5.3</score>  
+    <CWE>CWE-203</CWE>
+    <PCI>PCI:6.5.5</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> MEDIO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Recolectar nombres de usuario  para hacer un ataque de diccionario</impacto_tecnico>
+    <impacto_negocio> Puede ser un riesgo para las cuentas de usuarios</impacto_negocio>    
+    <PruebaConcepto> Se pudo identificar el siguiente comportamiento que ayuda a un atacante a identificar usuarios validos:SALTOLINEA-	Usuario invalido redirecciona a: ebank/idxSwloginVq.aspxSALTOLINEA-	Usuario valido redirecciona a: ebank/idxSwLoginPCVq.aspxSALTOLINEALa columna “payload” son los codigo de clientes validos identificados: IMAGEN</PruebaConcepto>
+    <descripcion>Mediante mensajes o comportamiento de la aplicación se puede recolectar una lista de usuarios validos.</descripcion>    
+    <recomendacion>Implementar el CAPTCHA adecuadamente</recomendacion> 
+    <recomendacionMatriz> Implementar el CAPTCHA adecuadamente </recomendacionMatriz> 
+    <conclusion>La aplicación permite identificar usuarios validos</conclusion>        
+	  <referenciaweb> https://www.reydes.com/d/?q=Enumerar_Usuarios_Existentes_en_una_Aplicacion_Web_mediante_Mensajes_de_Error</referenciaweb>    
+  </vuln>
+
+  <vuln> 
+  	<codVul>CS-11</codVul> 
+    <grupo>Autenticación</grupo>
+    <nombre>Borrado de datos</nombre>  
+    <criterio-aceptacion>Los datos de autenticación se borran del almacenamiento del cliente después de que finaliza la sesión.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-922</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-12</codVul> 
+    <grupo>Autenticación</grupo>
+    <nombre>Autorización</nombre>  
+    <criterio-aceptacion>Los usuarios sólo deben poder acceder a las funciones, archivos de datos, URLs, controladores, servicios y otros recursos para los que posean una autorización específica.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-285</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-13</codVul> 
+    <grupo>Autenticación</grupo>
+    <nombre>Referencia Directa Insegura a Objetos </nombre>  
+    <criterio-aceptacion>Verifique que los datos sensibles y las API estén protegidos contra los ataques de Referencia Directa Insegura a Objetos (IDOR) dirigidos a la creación, lectura, actualización y eliminación de registros de otros usuarios.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-639</CWE>
+    <PCI>PCI:6.5.8</PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-18</codVul> 
+    <grupo> Almacenamiento de credenciales</grupo>
+    <nombre>Almacenamiento de secretos</nombre>  
+    <criterio-aceptacion>Las contraseñas de bases de datos, las claves API no se deben incluir en el código fuente ni se debe almacenar en los repositorios de código fuente. </criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-798</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> MEDIO </riesgoInforme>    
+    <agente_amenaza> USUARIO EXTERNO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion> Se identifico apikey , databaseURL  y demás datos de configuración a la base de datos del servicio utilizado Firebase.</descripcion>    
+    <recomendacion> Ofuscar esta informaciónSALTOLINEA	No se deben revelar llaves o repositorios desde el lado Frontend en sus archivos </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> https://vinay7751.medium.com/firebase-key-leak-and-how-to-exploit-firebase-keys-61b1e4057119</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-19</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Longitud de los contraseñas</nombre>  
+    <criterio-aceptacion>La aplicación deberá permitir que las contraseñas de los usuarios sean de hasta 64 caracteres.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-20</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Caracteres especiales</nombre>  
+    <criterio-aceptacion>Las contraseñas permiten cualquier carácter Unicode imprimible, incluidos los caracteres especiales y espacios.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-21</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Cambio de contraseña</nombre>  
+    <criterio-aceptacion>La funcionalidad de actualización requiere la contraseña actual y la contraseña nueva.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-22</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Cambio de contraseña</nombre>  
+    <criterio-aceptacion>Verificar que las contraseñas enviadas durante el registro de una cuenta y el cambio de contraseña se comparan con una base de datos de contraseñas expuestos públicamente.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-23</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Robustez de la contraseña</nombre>  
+    <criterio-aceptacion>Se proporciona un medidor de robustez de la contraseña para ayudar a los usuarios a establecer una contraseña más segura.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-24</codVul>
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Pegado de contraseña</nombre>
+    <criterio-aceptacion>La funcionalidad "pegar" del navegador debe estar permitida, para que se pueda copiar el contraseña de gestores seguros de contraseñas</criterio-aceptacion>    
+    <score>0</score>  
+    <CWE>CWE-521</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-25</codVul> 
+    <grupo>Contraseñas del sistema</grupo>
+    <nombre>Contraseñas temporales </nombre>  
+    <criterio-aceptacion>Las contraseñas temporales generados por el sistema DEBERÁN tener al menos 8 caracteres, PUEDEN contener letras y números, no deberán tener una validez de más de 20 minutos. No se debe permitir que estas contraseñas temporales se conviertan en  contraseñas indefinidas.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-330</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-26</codVul> 
+    <grupo>Tokens de activación</grupo>
+    <nombre>Expiración</nombre>  
+    <criterio-aceptacion>Los códigos o tokens de activación solo pueden ser usados una sola vez y expiran después de 10 minutos.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-287</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-27</codVul> 
+    <grupo>Tokens de activación</grupo>
+    <nombre>Entropía</nombre>  
+    <criterio-aceptacion>El código se genera mediante un generador de números aleatorios seguro, que contiene al menos 20 bits de entropía (normalmente, una cadena alfanumérica aleatoria de 8 caracteres es suficiente).</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-310</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-36</codVul> 
+    <grupo>API REST y GRAPHQL</grupo>
+    <nombre>Protección de endpoints</nombre>  
+    <criterio-aceptacion>Para los métodos HTTP RESTful habilitados evitar que los usuarios normales usen DELETE o PUT en recursos o API protegidos.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-650</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-37</codVul> 
+    <grupo>API REST y GRAPHQL</grupo>
+    <nombre>GraphQL DoS</nombre>  
+    <criterio-aceptacion>Se utiliza una lista de consultas permitidas o límites de profundidad para evitar denegación de servicio (DoS).</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-770</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-38</codVul> 
+    <grupo>API REST y GRAPHQL</grupo>
+    <nombre>Headers Content-Type</nombre>  
+    <criterio-aceptacion>Los servicios REST comprueban explícitamente que el header Content-Type de la petición sea el esperado, como application/xml o application/json.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-436</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-39</codVul> 
+    <grupo>API REST y GRAPHQL</grupo>
+    <nombre>Introspección</nombre>
+    <criterio-aceptacion>Deshabilitar la introspección de GraphQL en todo el sistema.</criterio-aceptacion>    
+    <score>0</score>  
+    <CWE>CWE-285</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-40</codVul> 
+    <grupo>Divulgación de información</grupo>
+    <nombre>Divulgación de información</nombre>
+    <criterio-aceptacion>- El modo de depuración están desactivados en producción para evitar divulgación de información.SALTOLINEA- Los mensajes de error del servidor de aplicaciones y del framework están configurados para no mostrar información de la aplicación como ser versiones, rutas, etc.</criterio-aceptacion>
+    <score>3.7</score>  
+    <CWE>CWE-497</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Se divulga información interna de la aplicación  </impacto_tecnico>
+    <impacto_negocio> Ninguna</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>Se identificó archivos que divulgan información de la aplicación </descripcion>    
+    <recomendacion>Realizar una configuración segura para que la aplicación no muestre errores detallados</recomendacion> 
+    <recomendacionMatriz> Realizar una configuración segura para que la aplicación no muestre errores detallados </recomendacionMatriz> 
+    <conclusion>Se divulga informacion de la aplicación</conclusion>        
+	  <referenciaweb> https://laravel.com/docs/4.2/errors</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-41</codVul> 
+    <grupo>Divulgación de información</grupo>
+    <nombre>Exposición de usuarios</nombre>
+    <criterio-aceptacion>La aplicación no divulga datos de los usuarios del sistema</criterio-aceptacion>
+    <score>0</score>
+    <CWE>N/A</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>
+    <riesgoInforme> BAJO </riesgoInforme>
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio> 
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz>
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-42</codVul>
+    <grupo>Divulgación de información</grupo>
+    <nombre>Respuesta HTTP con información del servidor</nombre>
+    <criterio-aceptacion>Las cabeceras HTTP o cualquier parte de la respuesta HTTP no exponen información detallada de la versión de los componentes del sistema. </criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-200</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Se divulga información de versiones de software</impacto_tecnico>
+    <impacto_negocio> Ninguna</impacto_negocio>    
+    <PruebaConcepto>Se reviso las cabeceras devueltas por el servidor. SALTOLINEA IMAGEN SALTOLINEA Se identifico XXXX cabeceras que exponen versiones de software usado por la aplicación:</PruebaConcepto>    
+    <descripcion>Se identificó información  de versiones en la respuesta HTTP </descripcion>    
+    <recomendacion>PASO 1: En el archivo de configuración php.ini añadir/modificar las directivas de configuración con los siguientes valores:SALTOLINEA-expose_php = offSALTOLINEASALTOLINEAPASO 2: En el archivo de configuración de Apache httpd.conf añadir/modificar las directivas de configuración con los siguientes valores: SALTOLINEASALTOLINEA-ServerSignature OffSALTOLINEA-ServerTokens Prod SALTOLINEASALTOLINEAPosteriormente se debe reiniciar el servidor web ApacheSALTOLINEAEn el archivo /etc/nginx/nginx.conf debe estar configurado: SALTOLINEA server_tokens off;</recomendacion> 
+    <recomendacionMatriz> Realizar una configuración segura para que la aplicación no muestre errores detallados </recomendacionMatriz> 
+    <conclusion>Se divulga información de la aplicación</conclusion>    
+	  <referenciaweb> https://ciberninjas.com/como-ocultar-version-apache-e-info/SALTOLINEAhttps://ubiq.co/tech-blog/how-to-remove-x-powered-by-in-apache-php/|https://www.tecmint.com/hide-nginx-server-version-in-linux/</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-44</codVul> 
+    <grupo>Servidores</grupo>
+    <nombre>Extensiones de archivo</nombre>
+    <criterio-aceptacion>El servidor web está configurado para servir solo archivos con extensiones de archivo específicas para evitar fugas de código fuente.SALTOLINEA- Archivos de respaldo (p. Ej., .Bak).SALTOLINEA- Archivos temporales (p. Ej., .Swp).SALTOLINEA- Archivos comprimidos (.zip, .tar.gz, etc.).SALTOLINEA- Archivos de configuración .env, .git.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-552</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-45</codVul> 
+    <grupo>Servidores</grupo>
+    <nombre>Protocolos antiguos</nombre>
+    <criterio-aceptacion>Protocolos antiguos de SSL y TLS deben estar deshabilitadas, como SSLv2, SSLv3 o TLS 1.0 La última versión de TLS deberá ser usada (Actualmente TLS 1.3).</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-326</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-46</codVul> 
+    <grupo>Servidores</grupo>
+    <nombre>Archivos por defecto</nombre>
+    <criterio-aceptacion>Elimine las cuentas de prueba y  códigos de ejemplo antes de que la aplicación se despliegue en producción.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>N/A</CWE>
+    <PCI>PCI: 6.3.1</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-48</codVul> 
+    <grupo>Servidores</grupo>
+    <nombre>Configuración del servidor web</nombre>
+    <criterio-aceptacion>El servidor tiene deshabilitado:SALTOLINEA- Listado de directorios.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-548</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Se divulga información interna de la aplicación  </impacto_tecnico>
+    <impacto_negocio> Ninguna</impacto_negocio>    
+     <PruebaConcepto>Se procedió a identificar los directorios que tiene el listado de contenidos habilitados mediante la técnica de navegación forzada. En el momento de la evaluación no se identifico información sensible</PruebaConcepto> 
+    <descripcion>El listado de directorios está habilitado en el servidor web y permite ver el contenido de las carpetas.  </descripcion>
+    <recomendacion>Modificar o crear el archivo .htaccess en la raíz del proyecto y agregar:SALTOLINEASALTOLINEA-Options -IndexesSALTOLINEASALTOLINEA Guardar el archivo y reiniciar el servidor.</recomendacion> 
+    <recomendacionMatriz> Deshabilitar el listado de directorios en el servidor web </recomendacionMatriz> 
+    <conclusion>Se divulga información de la aplicación</conclusion>       
+	  <referenciaweb> https://professor-falken.com/webmasters-y-seo/como-evitar-que-se-listen-los-archivos-y-directorios-de-tu-servidor-apache/</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-49</codVul> 
+    <grupo>Protección de datos del lado del cliente</grupo>
+    <nombre>Cabeceras anti-caché</nombre>
+    <criterio-aceptacion>La aplicación establece suficientes cabeceras anti-caché para que los datos sensibles no se almacenen en caché en los navegadores modernos. Ej: Cache-Control: No-Store.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-525</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N</vector>    
+    <riesgoInforme> INFORMATIVO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Acceso a datos cacheados</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>    
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>La aplicación no establece suficientes cabeceras anti-caché para que los datos sensibles no se almacenen en caché en los navegadores modernos</descripcion>    
+    <recomendacion>-	Para adicionar el header crear un archivo .htaccess en la raíz del proyecto con el siguiente contenido:SALTOLINEASALTOLINEA    Header set Cache-Control "no-store"SALTOLINEA</recomendacion> 
+    <recomendacionMatriz> Establecer el header seguro Cache-Control </recomendacionMatriz> 
+    <conclusion>Faltan headers seguros</conclusion>        
+	  <referenciaweb> https://www.cloudflare.com/learning/cdn/glossary/what-is-cache-control/</referenciaweb>    
+  </vuln>
+  
+  <vuln> 
+  	<codVul>CS-50</codVul> 
+    <grupo>Protección de datos del lado del cliente</grupo>
+    <nombre>datos sensibles</nombre>  
+    <criterio-aceptacion>Los datos almacenados en el almacenamiento del navegador (como localstorage, sessionstorage o cookies) no contienen datos sensibles. Lo datos sensibles estarán detallados en modelado de amenazas.</criterio-aceptacion>
+     <score>3.7</score>  
+    <CWE>CWE-539</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Obtener nombre de usuario de clientes</impacto_tecnico>
+    <impacto_negocio> Bloqueo de cuentas de usuario </impacto_negocio>    
+    <PruebaConcepto> Se reviso la información que aun se almacenaba despues de usar la aplicación y se pudo identificar :</PruebaConcepto>    
+    <descripcion>Se almacena información sensible en el local storage/session storage </descripcion>    
+    <recomendacion> No Almacenar datos sensibles o si los requiere para el funcionamiento de la aplicación guardarlos de manera cifrada </recomendacion> 
+    <recomendacionMatriz> No Almacenar datos sensibles en el local storage </recomendacionMatriz> 
+    <conclusion>La aplicación divulga información sensible en el local storage</conclusion>
+	  <referenciaweb> https://snyk.io/blog/is-localstorage-safe-to-use/</referenciaweb>        
+  </vuln>
+  <vuln> 
+   	<codVul>CS-51-1</codVul> 
+    <grupo>Cabeceras de seguridad</grupo>
+    <nombre>Valores de las cabeceras seguras</nombre>
+    <criterio-aceptacion>X-Content-Type-Options: nosniff.</criterio-aceptacion>
+    <score>2.3</score>  
+    <CWE>CWE-116</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Aumenta la superficie de ataque para otros ataques</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor: IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>- Falta el header seguro: HEADER_SEGURO</descripcion>    
+    <recomendacion>- Implementar el header seguro X-Content-Type-Options: nosniff</recomendacion> 
+    <recomendacionMatriz> Implementar los headeres seguros respectivos </recomendacionMatriz> 
+    <conclusion>Falta Implementar headers seguros</conclusion>        
+	  <referenciaweb> https://www.a2secure.com/blog/que-son-las-cabeceras-de-seguridad-y-como-nos-ayudan-a-incrementar-la-seguridad-de-nuestra-web/</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-51-2</codVul> 
+    <grupo>Cabeceras de seguridad</grupo>
+    <nombre>Valores de las cabeceras seguras</nombre>
+    <criterio-aceptacion>Strict-Transport-Security:max-age=15724800; includeSubdomains.</criterio-aceptacion>
+    <score>3.1</score>  
+    <CWE>CWE-523</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Aumenta la superficie de ataque para otros ataques</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor: IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>- Falta el header seguro: HEADER_SEGURO</descripcion>    
+    <recomendacion>- Implementar el header seguro Strict-Transport-Security:max-age=15724800; includeSubdomains.</recomendacion> 
+    <recomendacionMatriz> Implementar los headeres seguros respectivos </recomendacionMatriz> 
+    <conclusion>Falta Implementar headers seguros</conclusion>        
+	  <referenciaweb> https://www.a2secure.com/blog/que-son-las-cabeceras-de-seguridad-y-como-nos-ayudan-a-incrementar-la-seguridad-de-nuestra-web/</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-51-3</codVul> 
+    <grupo>Cabeceras de seguridad</grupo>
+    <nombre>Valores de las cabeceras seguras</nombre>
+    <criterio-aceptacion>Referrer-Policy:no-referrerSALTOLINEAtambién es aceptable:SALTOLINEAReferrer-Policy:same-origin</criterio-aceptacion>
+    <score>3.1</score>
+    <CWE>CWE-116</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Aumenta la superficie de ataque para otros ataques</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor: IMAGEN SALTOLINEA</PruebaConcepto>
+    <descripcion>- Falta el header seguro: HEADER_SEGURO</descripcion>    
+    <recomendacion>- -Habilitar mod_headers en Apache adicionando en el archivo httpd.confSALTOLINEASALTOLINEALoadModule headers_module modules/mod_headers.soSALTOLINEASALTOLINEA-	Para adicionar los header seguros crear un archivo .htaccess en la raíz del proyecto con el siguiente contenidoSALTOLINEASALTOLINEA# Prevenir MIME sniffingSALTOLINEAHeader set X-Content-Type-Options "nosniff"SALTOLINEASALTOLINEA# Forzar la seguridad del transporte estricto (HSTS)SALTOLINEAHeader always set Strict-Transport-Security "max-age=31536000; includeSubDomains"SALTOLINEASALTOLINEA# Política de referenteSALTOLINEAHeader set Referrer-Policy "no-referrer"SALTOLINEASALTOLINEA# Prevenir clickjackingSALTOLINEAHeader always append X-Frame-Options SAMEORIGINSALTOLINEA</recomendacion> 
+    <recomendacionMatriz> Implementar los headeres seguros respectivos </recomendacionMatriz> 
+    <conclusion>Falta Implementar headers seguros</conclusion>        
+	  <referenciaweb> https://www.a2secure.com/blog/que-son-las-cabeceras-de-seguridad-y-como-nos-ayudan-a-incrementar-la-seguridad-de-nuestra-web/</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-51-4</codVul> 
+    <grupo>Cabeceras de seguridad</grupo>
+    <nombre>Valores de las cabeceras seguras</nombre>
+    <criterio-aceptacion>Contramedida para Clickjacking:SALTOLINEAX-Frame-Options: DENYSALTOLINEAtambién es aceptable:X-Frame-Options: SAMEORIGIN</criterio-aceptacion>
+    <score>3.1</score>  
+    <CWE>CWE-346</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Aumenta la superficie de ataque para otros ataques</impacto_tecnico>
+    <impacto_negocio> Ninguno</impacto_negocio>
+    <PruebaConcepto> Se reviso los headers devueltos por el servidor: IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>- Falta el header seguro: HEADER_SEGURO</descripcion> 
+    <recomendacion>- Implementar el header seguro "X-Frame-Options: DENY". Tambien es aceptable el valor "SAMEORIGIN"</recomendacion> 
+    <recomendacionMatriz> Implementar los headeres seguros respectivos </recomendacionMatriz> 
+    <conclusion>Falta Implementar headers seguros</conclusion>        
+	  <referenciaweb> https://www.a2secure.com/blog/que-son-las-cabeceras-de-seguridad-y-como-nos-ayudan-a-incrementar-la-seguridad-de-nuestra-web/</referenciaweb>    
+  </vuln>
+<vuln> 
+  	<codVul>CS-52</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Contaminación de parámetros HTTP</nombre>  
+    <criterio-aceptacion>La aplicación tiene defensas contra los ataques de contaminación de parámetros HTTP, particularmente si la aplicación no hace ninguna distinción sobre la fuente de los parámetros de la solicitud (GET, POST, cookies, cabeceras o variables de entorno).</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-235</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-53</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Asignación masiva de parámetros</nombre>  
+    <criterio-aceptacion>La aplicación tiene protección contra las vulnerabilidades de asignación masiva de parámetros. </criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-235</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-54</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Redirección URL</nombre>  
+    <criterio-aceptacion>Los redireccionamientos sólo permiten destinos de una lista de URLs permitida o muestra una advertencia cuando se redirige a contenido potencialmente no fiable. </criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-601</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  
+  <vuln> 
+   	<codVul>CS-56</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Funciones peligrosas</nombre>
+    <criterio-aceptacion>La aplicación evita el uso de la función eval() u otras funciones de ejecución de código dinámico. Cuando no hay alternativa, cualquier entrada del usuario que se incluya debe ser sanitizada antes de ser ejecutada.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-95</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+
+  <vuln> 
+   	<codVul>CS-58</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Inyecciones SQL</nombre>
+    <criterio-aceptacion>Las consultas a la base de datos (SQL, NoSQL, etc) utilizan consultas parametrizadas, ORM  o están protegidas de otro modo contra los ataques de inyección.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-89</CWE>
+    <PCI>PCI: 6.5.1</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-59</codVul>
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>XSS</nombre>
+    <criterio-aceptacion>Sanitiza la salida HTML para protegerse contra ataques de XSS reflejado, almacenado y basados en el DOM.</criterio-aceptacion>
+    <score>3.1</score>  
+    <CWE>CWE-79</CWE>
+    <PCI>PCI:6.5.7</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Inyectar codigo javascript </impacto_tecnico>
+    <impacto_negocio> Posible acceso a información sensible</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>Ataque donde el atacante ejecuta scripts maliciosos en el navegador de un usuario usando una aplicación web vulnerable.</descripcion>    
+    <recomendacion>Valida, escapa y sanitiza datos de entrada. Otra opcion es usar encabezados de seguridad (CSP) pero su implementacion es un poco complicada</recomendacion> 
+    <recomendacionMatriz> Valida, escapa y sanitiza datos de entrada </recomendacionMatriz> 
+    <conclusion>Es posible ejecutar codigo javascript en los navegadores de los clientes</conclusion>        
+	  <referenciaweb> https://es.godaddy.com/blog/que-es-el-cross-site-scripting-xss-y-como-puedes-evitarlo/#:~:text=El%20cross%2Dsite%20scripting%20o,p%C3%A1ginas%20web%20que%20estos%20visitan.</referenciaweb>    
+  </vuln>
+
+  <vuln> 
+   	<codVul>CS-60</codVul>
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Inyecciones</nombre>
+    <criterio-aceptacion>La aplicación tiene controles que le protege contra ataques de Inclusión de archivos locales (LFI), inclusión de archivos remotos (RFI), inyecciones LDAP e inyección de comandos.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-643SALTOLINEACWE-829SALTOLINEACWE-90SALTOLINEACWE-78</CWE>
+    <PCI>PCI: 6.5.1</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+
+  <vuln> 
+  	<codVul>CS-61</codVul> 
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>Desbordamiento de buffer</nombre>  
+    <criterio-aceptacion>La aplicación valida que los datos de entrada por parte del usuario no tengan longitudes muy largas. </criterio-aceptacion>
+    <score>0</score>  
+    <CWE>N/A</CWE>
+    <PCI>PCI:6.5.2</PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  
+
+  <vuln> 
+   	<codVul>CS-62</codVul>
+    <grupo>Validación de datos de entrada</grupo>
+    <nombre>HTTP header injection</nombre>
+    <criterio-aceptacion>La aplicación no usa directamente los valores enviados en las cabeceras</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-644</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-63</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Software obsoleto</nombre>
+    <criterio-aceptacion>La aplicación no utilizará tecnologías inseguras u obsoletas como plugins NSAPI, Flash, Shockwave, ActiveX, Silverlight, NACL o applets Java del lado del cliente.</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-477</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-64</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Peticiones automatizadas</nombre>  
+    <criterio-aceptacion>Debe existir controles anti automatización. Dichos controles pueden ser CAPTCHA, retrasos cada vez mayores entre los intentos, restricciones a nivel de red (Ej: fail2ban) o restricciones basadas en ubicación . SALTOLINEANo debe ser posible realizar más de 100 intentos fallidos por hora en una sola cuenta.</criterio-aceptacion>
+    <score>0</score>
+    <CWE>CWE-307</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-65</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Solicitudes anómalas</nombre>  
+    <criterio-aceptacion>La aplicación puede detectar y alertar sobre un número anormal de solicitudes, como por ejemplo, por IP, por usuario, por total por hora o por día.</criterio-aceptacion>
+    <score>5.3</score> 
+    <CWE>CWE-307</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</vector>    
+    <riesgoInforme> MEDIO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> Realizar peticiones automatizadas a la aplicación</impacto_tecnico>
+    <impacto_negocio> Divulgación de datos personales</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>La aplicación no gestiona adecuadamente las peticiones automáticas, lo que permite extraer información de la entidad </descripcion>    
+    <recomendacion>-	Implementar correctamente el CAPTCHA SALTOLINEA-	Implementar rate limiting para la búsqueda de facturas</recomendacion> 
+    <recomendacionMatriz> Implementar controles que limiten las peticiones automatizadas </recomendacionMatriz> 
+    <conclusion>Existe una ausencia de controles contra peticiones automatizadas</conclusion>        
+	  <referenciaweb> https://www.npmjs.com/package/ng-recaptcha</referenciaweb>         
+  </vuln>
+  <vuln> 
+  	<codVul>CS-66</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Notificación de actualización</nombre>  
+    <criterio-aceptacion>Se deben enviar notificaciones seguras a los usuarios después de las actualizaciones de los detalles de autenticación, como el restablecimiento de las credenciales y cambio de correo electrónico.</criterio-aceptacion>
+    <score>0</score>
+    <CWE>CWE-620</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>  
+  <vuln> 
+  	<codVul>CS-67</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Ataques de phishing</nombre>  
+    <criterio-aceptacion>La aplicación debe ser resistente a ataques de phishing. Implementar controles como el uso de un segundo factor de autenticación.</criterio-aceptacion>
+    <score>0</score>
+    <CWE>CWE-308</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+  	<codVul>CS-68</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Preguntas secretas</nombre>  
+    <criterio-aceptacion>No usar las "preguntas secretas" como medio de restablecimiento de contraseñas.</criterio-aceptacion>
+    <score>0</score>
+    <CWE>CWE-640</CWE>
+    <PCI></PCI>
+    <enfoque>cajaGris</enfoque>
+    <vector>NA</vector>
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA</PruebaConcepto>    
+    <descripcion>NA.</descripcion>    
+    <recomendacion> NA </recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+  <vuln> 
+   	<codVul>CS-69</codVul> 
+    <grupo> Otros controles</grupo>
+    <nombre>Vulnerabilidades conocidas</nombre>
+    <criterio-aceptacion>La aplicación o sus componentes no tienen vulnerabilidades reportadas</criterio-aceptacion>
+    <score>0</score>  
+    <CWE>CWE-1395</CWE>
+    <PCI>N/A</PCI>
+    <enfoque>cajaNegra</enfoque>
+    <vector>NA</vector>    
+    <riesgoInforme> BAJO </riesgoInforme>    
+    <agente_amenaza> USUARIO  NO LOGEADO </agente_amenaza>    
+    <impacto_tecnico> NA</impacto_tecnico>
+    <impacto_negocio> NA</impacto_negocio>    
+    <PruebaConcepto> NA. IMAGEN SALTOLINEA</PruebaConcepto>    
+    <descripcion>NA</descripcion>    
+    <recomendacion>NA</recomendacion> 
+    <recomendacionMatriz> NA </recomendacionMatriz> 
+    <conclusion>NA</conclusion>        
+	  <referenciaweb> NA</referenciaweb>    
+  </vuln>
+</vulnerabilidades>
+

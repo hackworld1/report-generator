@@ -1,0 +1,13 @@
+Aplicación de escritorio
+Aplicación móvil
+Aplicación web
+ATM
+Estación de trabajo
+Red WiFi
+Servidor
+Directorio Activo
+Base de datos
+VoIP
+Sistemas de vigilancia
+Dispositivo de red
+Otros
